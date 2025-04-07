@@ -36,10 +36,10 @@ Body: {clean_body}
     response = llm.invoke(prompt)
     result = response.content.strip().lower()
 
-    if "spam" in result:
-        return "Spam"
-    else:
+    if "not spam" in result:
         return "Not Spam"
+    else:
+        return "Spam"
 
 # Streamlit Page Config
 st.set_page_config(page_title="Spam Mail Detection with ChatGroq", page_icon="📧", layout="wide")
