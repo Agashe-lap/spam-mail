@@ -44,6 +44,9 @@ Body: {clean_body}
 # Streamlit Page Config
 st.set_page_config(page_title="Spam Mail Detection with ChatGroq", page_icon="📧", layout="wide")
 
+# Show Logo (adjust the file path if needed)
+st.image("spam_detection_logo.png", width=200)  # <-- Path to your logo image
+
 # Custom CSS Styling
 st.markdown("""
     <style>
@@ -52,7 +55,7 @@ st.markdown("""
             color: #1E3A8A;
             font-size: 50px;
             font-weight: bold;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         .subheader {
             text-align: center;
